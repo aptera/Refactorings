@@ -13,7 +13,7 @@ namespace CSharpRefactoringTests.GildedRose.Original
             var items = new List<Item> { new Item { Name = "foo", SellIn = 0, Quality = 0 } };
             var app = new CSharpRefactorings.GildedRose.Original.GildedRose(items);
             app.UpdateQuality();
-            Assert.AreEqual("fixme", items[0].Name);
+            Assert.AreEqual("foo", items[0].Name);
         }
     }
 }
